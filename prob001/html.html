@@ -1,0 +1,32 @@
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="js.js"></script>
+
+<div class="con">
+    <h1>Very cool phone book app</h1>
+    <div class="form">
+        <input type="text" id="context" placeholder="contact name">
+        <input type="text" id="mobtext" placeholder="Mobile No.">
+        <input type="text" id="emtext" placeholder="email">
+        <button onclick="newNote()">Add Contact</button>
+    </div>
+    <div class="form">
+        <div>Search contacts by Mobile No.</div>
+        <input type="text" id="search" placeholder="xxx xxx xxxx">
+    </div>
+    <div id="error_div" style="color: red;"></div>
+    <table id="DataTable" class="sortable">
+        <thead onclick="sortTable()">
+            <tr onclick="sortTable()">
+                <th onclick="sortTable()">name</th>
+                <th onclick="sortTable()">Mobile No.</th>
+                <th onclick="sortTable()">email</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+</div>
+
+
